@@ -4,6 +4,7 @@ import os
 import random
 from keys import discordkey, geminikey
 import google.generativeai as genai
+from embeds import helpe
 
 
 genai.configure(api_key=geminikey)
@@ -38,9 +39,8 @@ async def g(ctx, *, prompt:str):
 
 
 @bot.command(name="-help")
-async def g(ctx, *, prompt:str):
-  final=model.generate_content(prompt)
-  await ctx.send(final.text)
+async def h(ctx):
+  await ctx.send(helpe)
 
 
 
