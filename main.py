@@ -16,7 +16,7 @@ model = genai.GenerativeModel('gemini-pro')
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix = '-', case_insensitive = True, activity=discord.Game(name="Use '--help' for help"), status=discord.Status.online, intents=intents)
+bot = commands.Bot(command_prefix = '-', case_insensitive = True, activity=discord.CustomActivity(name="Use '--help' for help"), status=discord.Status.online, intents=intents)
 versao = ('0.0.1')
 
 
