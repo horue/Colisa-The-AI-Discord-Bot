@@ -46,8 +46,8 @@ async def g(ctx, *, prompt:str):
 
 
 @bot.command()
-async def teste(ctx):
-  await ctx.send("Resposta de teste.")
+async def teste(ctx='teste'):
+  await ctx.send("Testing")
 
 
 
