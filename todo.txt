@@ -1,0 +1,2 @@
+Add bot personality
+Make her identify herself as "Colisa"
