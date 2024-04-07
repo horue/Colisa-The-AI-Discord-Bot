@@ -11,7 +11,7 @@ genai.configure(api_key=geminikey)
 model = genai.GenerativeModel('gemini-pro')
 
 
-
+## Bot Connection ##
 
 
 intents = discord.Intents.default()
@@ -20,10 +20,15 @@ bot = commands.Bot(command_prefix = '-', case_insensitive = True, activity=disco
 versao = ('0.0.1')
 
 
-
 @bot.event
 async def on_ready():
   print('Entramos como {0.user}' . format(bot))
+
+
+
+
+## Gemini Commands ##
+
 
 
 def gerar_resposta(messages):
@@ -37,6 +42,9 @@ async def g(ctx, *, prompt:str):
   final=model.generate_content(prompt)
   await ctx.send(final.text)
 
+
+
+## General Commands ##
 
 @bot.command(name="-help")
 async def h(ctx):
