@@ -40,7 +40,7 @@ async def g(ctx, *, prompt:str):
 
 @bot.command(name="-help")
 async def h(ctx):
-  await ctx.send(helpe)
+  await ctx.send(embed=helpe)
 
 
 
