@@ -1,6 +1,7 @@
 # Colisa: The AI Discord Bot
 **AI-powered fun in your server!**
-Uses Google's GenAI (potentially Gemini) for text generation and more!
+
+Uses Google's GenAI for text generation and more!
 
 1. Setup:
 
