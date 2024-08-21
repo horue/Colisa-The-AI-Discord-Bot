@@ -57,6 +57,10 @@ async def h(ctx):
 async def teste(ctx='teste'):
   await ctx.send("Testing")
 
+@bot.command()
+async def teste(ctx='ping'):
+  await ctx.send("pong!")
+
 
 
 
