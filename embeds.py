@@ -18,4 +18,6 @@ helpe.set_footer(text= f'Bot developed by horue. Gemini AI developed by Google.'
 helpe.add_field(name= 'About Colisa AI Bot', value= "Colisa is a powerful discord bot powered with Google's Gemini AI! That enables you to ask her anything you want!", inline=False)
 helpe.add_field(name= 'How can I use this AI assistant?', value= '•** Ask questions:** Type in your question and hit enter.\n•** Provide context:** If needed, provide additional information to help the assistant understand your question.\n•** Be specific:** The more specific your question, the better the assistant can help you.', inline=False)
 helpe.add_field(name= 'Need more help?', value= "If you want more info about what I can do, check out my dev's GitHub: https://github.com/horue/Colisa-The-AI-Discord-Bot", inline=False)
+helpe.add_field(name= 'Additional Information', value= "If, for some reason, Google Gemini is offline or unable to answer any question, the generated text will be provide via Ollama, using Mistral model.", inline=False)
+
 
