@@ -8,7 +8,7 @@ from embeds import helpe
 
 
 genai.configure(api_key=geminikey)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 
 ## Bot Connection ##
@@ -58,7 +58,7 @@ async def teste(ctx='teste'):
   await ctx.send("Testing")
 
 @bot.command()
-async def teste(ctx='ping'):
+async def ping(ctx='ping'):
   await ctx.send("pong!")
 
 
