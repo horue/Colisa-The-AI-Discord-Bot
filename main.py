@@ -39,7 +39,7 @@ def gerar_resposta(messages):
 
 @bot.command(name="-")
 async def g(ctx, *, prompt:str):
-  final=model.generate_content(prompt)
+  final=model.generate_content(f'{prompt}.Follow the language of the message.', generation_config=genai.types.GenerationConfig(max_output_tokens=500))
   await ctx.send(final.text)
 
 
