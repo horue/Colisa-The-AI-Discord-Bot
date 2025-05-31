@@ -65,5 +65,5 @@ async def ping(ctx='ping'):
 
 
 
-
-bot.run(discordkey)
+if __name__ == "__main__":
+  bot.run(discordkey)
